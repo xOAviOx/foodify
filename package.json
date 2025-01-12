@@ -1,0 +1,16 @@
+{
+  "name": "recipeapp",
+  "version": "1.0.0",
+  "description": "A recipe app",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Avi shukla",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.83.1"
+  }
+}
