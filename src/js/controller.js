@@ -1,4 +1,7 @@
 import icons from '../img/icons.svg';
+
+
+
 const recipeContainer = document.querySelector('.recipe');
 
 const timeout = function (s) {
@@ -30,7 +33,6 @@ const showRecipe = async function () {
     //Loading recipe
     renderSpinner(recipeContainer);
     const res = await fetch(
-      // 'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886'
       'https://forkify-api.herokuapp.com/api/v2/recipes/664c8f193e7aa067e94e82b4'
     );
     const data = await res.json();
