@@ -23,7 +23,6 @@ export default class View {
 
     newElements.forEach((newElements, i) => {
       const curEl = curElements[i];
-      console.log(curEl, newElements.isEqualNode(curEl));
 
       //Updates changed text
       if (
