@@ -18,7 +18,6 @@ class paginationView extends View {
     const numPages = Math.ceil(
       this._data.results.length / this._data.resultsperpage
     );
-    console.log(numPages);
     const btnLeft = `
     <button data-goto=${
       currentPage - 1

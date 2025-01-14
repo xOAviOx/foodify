@@ -11,6 +11,23 @@
     display: block;
   }
 }
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none; // Optional: Remove underline
+
+  .header__logo {
+    width: 40px; // Adjust size as needed
+    height: auto;
+    margin-right: 10px; // Space between logo and text
+  }
+
+  .header__logo-text {
+    font-size: 1.5rem; // Adjust text size as needed
+    font-weight: bold; // Optional: Make it bold
+    color: #333; // Set text color
+  }
+}
 
 .search {
   background-color: #fff;

@@ -1,15 +1,17 @@
 {
-  "name": "recipeapp",
+  "name": "foodify",
   "version": "1.0.0",
   "description": "A recipe app",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist --no-optimize "
   },
   "author": "Avi shukla",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.83.1"
   },
