@@ -8,6 +8,7 @@ import addRecipeView from './views/addRecipeView.js';
 import icons from '../img/icons.svg';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import { MODAL_CLOSE_SEC } from './config.js';
 
 // if (module.hot) {
 //   module.hot.accept();
@@ -38,7 +39,6 @@ const controlRecipes = async function () {
 const controlSearchResults = async function () {
   try {
     resultsView.renderSpinner();
-    console.log(resultsView);
     // 1. get search query
     const query = searchView.getQuery();
     if (!query && query === '') return;
@@ -93,7 +93,6 @@ const controlAddRecipe = async function (newRecipe) {
 
     // Upload the new recipe data
     await model.uploadRecipe(newRecipe);
-    console.log(model.state.recipe);
 
     // Render recipe
     recipeView.render(model.state.recipe);
